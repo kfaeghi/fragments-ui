@@ -40,7 +40,7 @@ Amplify.configure({
 async function getUser() {
   try {
     // Get the user's info, see:
-    // https://docs.amplify.aws/lib/auth/advanced/q/platform/js/#identity-pool-federation
+    
     const currentAuthenticatedUser = await Auth.currentAuthenticatedUser();
 
     // If that didn't throw, we have a user object, and the user is authenticated
@@ -50,8 +50,7 @@ async function getUser() {
     const username = currentAuthenticatedUser.username;
 
     // Get the user's Identity Token, which we'll use later with our
-    // microservice. See discussion of various tokens:
-    // https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-user-pools-using-tokens-with-identity-providers.html
+    // microservice.
     const idToken = currentAuthenticatedUser.signInUserSession.idToken.jwtToken;
     const accessToken = currentAuthenticatedUser.signInUserSession.accessToken.jwtToken;
 
