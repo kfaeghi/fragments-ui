@@ -1,0 +1,29 @@
+{
+  "name": "fragments-ui",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Fragments UI testing web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kfaeghi/fragments-ui.git"
+  },
+  "keywords": [],
+  "author": "Khashayar Faeghi <kfaeghi@myseneca.ca>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/kfaeghi/fragments-ui/issues"
+  },
+  "homepage": "https://github.com/kfaeghi/fragments-ui#readme",
+  "devDependencies": {
+    "parcel": "^2.7.0",
+    "process": "^0.11.10",
+    "querystring-es3": "^0.2.1"
+  },
+  "dependencies": {
+    "@aws-amplify/ui-react": "^0.0.0-next-59d8b8e-20211120234739"
+  }
+}
