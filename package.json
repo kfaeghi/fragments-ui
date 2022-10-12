@@ -3,8 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "description": "Fragments UI testing web app",
-  "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +26,8 @@
     "querystring-es3": "^0.2.1"
   },
   "dependencies": {
-    "@aws-amplify/ui-react": "^0.0.0-next-59d8b8e-20211120234739"
+    "@aws-amplify/ui-react": "^0.0.0-next-59d8b8e-20211120234739",
+    "aws-amplify": "^4.3.37",
+    "axios": "^1.1.1"
   }
 }

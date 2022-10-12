@@ -48,6 +48,7 @@ async function getUser() {
 
     // Get the user's username
     const username = currentAuthenticatedUser.username;
+    console.log(username);
 
     // Get the user's Identity Token, which we'll use later with our
     // microservice.
