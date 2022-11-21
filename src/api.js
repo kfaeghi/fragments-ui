@@ -28,12 +28,13 @@ export async function getUserFragments(user) {
 }
 
 
-export async function postUserFragments(user, userdata) {
+export async function postUserFragments(user, userdata, contentType) {
   try {
+    console.log("This is the recieved content type: " + contentType);
     const url = process.env.API_URL + '/v1/fragments';
     const token = user.idToken;
 
-    axios.defaults.headers = { Authorization: 'Bearer ' + token, 'content-type': 'text/plain' }
+    axios.defaults.headers = { Authorization: 'Bearer ' + token, 'content-type': contentType };
 
     const response = await axios.post(url, userdata);
     console.log(response);
@@ -42,3 +43,5 @@ export async function postUserFragments(user, userdata) {
     console.error(error);
   }
 }
+
+

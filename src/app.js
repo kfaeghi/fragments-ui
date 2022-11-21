@@ -43,7 +43,8 @@ async function init() {
   
   submitBtn.onclick = () => {
     var data = document.getElementById('data').value
-    postUserFragments(user, data);
+    var conType = document.getElementById('format')
+    postUserFragments(user, data, conType.options[conType.selectedIndex].text);
   }
 
   
